@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>taskDash</title>
+    <script scr='/main.js'></script>
+  </head>
+  <body>
+    <h1> Add some things! </h1>
+    <form method ='POST' action='/addTask'>
+      <label>Add Task</label><br>
+      <input type ='text' name='taskName' placeholder='What do you have to do?' required>
+      <input type ='text' name='createdBy' placeholder='Your name' required>
+      <input type ='text' name='assignedTo' placeholder='Who should do this?' required>
+      <input type ='text' name='dueDate' placeholder='When should this be done?' required>
+      <input type='submit' value="Add Task">
+    </form>
+    <div id='taskList'></div>
+  </body>
+</html>
